@@ -1,0 +1,42 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.naviBar{
+    text-decoration: none;
+    background-color: lightgrey;
+    font-size: 20px;
+    color: black;
+    border-left: 3px solid red;
+    opacity: 90%;
+    transition-duration: 0.7s;
+    animation: ease-in-out;
+    margin: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: sticky;
+
+}
+
+.naviBar:hover{
+    opacity: 100%;
+    font-size: 21px;
+    font-weight: bold;
+    animation: ease-in-out;
+    transition-duration: 0.5s;
+
+}
+
+
+
+
+
+select{
+    border:none;
+    padding: 10px 20px;
+    border-radius:5px;
+}
+
+select:focus{
+    outline:none;
+}
