@@ -1,6 +1,7 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overflow-y: unset;
 }
 
 .naviBar{
@@ -26,12 +27,11 @@ html{
 
 
 
-
-
 select{
     border:none;
-    padding: 10px 20px;
-    border-radius:5px;
+    background-color: black;
+    color: white;
+    border-radius: 1px;
 }
 
 select:focus{

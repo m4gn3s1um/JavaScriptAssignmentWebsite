@@ -7,15 +7,8 @@
 </head>
 
 
-<script>
-    function onChange(event){
-        var color = event.value;
-        document.getElementById("ColorChanger")[0].style.backgroundColor = color;
-    }
-
-
-</script>
-
+<script src="Scripts/ColorChanger.js"></script>
+<script src="Scripts/ToDoList.js"></script>
 
 
 
@@ -55,13 +48,13 @@
 <!-- Color Changer -->
 <div id="ColorChanger" class="colorC" style="width: 50%; margin: auto; padding-top: 40%;">
 
-    <select name="colorPicker" onchange="onChange(this)">
-        <option value="green">green</option>
-        <option value="blue">blue</option>
-        <option value="yellow">yellow</option>
-        <option value="red"selected="selected">red</option>
-    </select>
+    <h1 style="text-align: center;">Color changer</h1>
 
+    <select class="colorDropDown" id="colorList" onchange="getColor()">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
 </div>
 
 
@@ -93,7 +86,27 @@
 <div style="padding-top: 30px;"></div>
 
 <!-- To-do list -->
-<div id="ToDoList" class="toDoList" style="width: 50%; margin: auto;">
+<div id="ToDoList" class="toDoList" style="width: 50%; margin: auto; background-color: bisque">
+
+    <h1 style="text-align: center"> To do list</h1>
+
+    <div style=" width: 100%; height: 35em;">
+
+        <input type="text" name="thing" id="addToList" style="justify-content: center">
+        <button onclick="pushList()"> Add to list</button>
+
+
+    <ul id="listThings" style="justify-content: center; text-align: center;">
+
+
+    </ul>
+
+
+
+    </div>
+
+
+
 </div>
 
 
