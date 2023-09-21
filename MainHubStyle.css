@@ -1,25 +1,22 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .naviBar{
     text-decoration: none;
-    background-color: lightgrey;
     font-size: 20px;
-    color: black;
+    color: white;
     border-left: 3px solid red;
     opacity: 90%;
     transition-duration: 0.7s;
     animation: ease-in-out;
     margin: 5px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    position: sticky;
-
+    padding-bottom: 3px;
+    padding-top: 3px;
 }
 
 .naviBar:hover{
-    opacity: 100%;
     font-size: 21px;
     font-weight: bold;
     animation: ease-in-out;
